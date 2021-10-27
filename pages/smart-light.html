@@ -1,0 +1,151 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=MuseoModerno:wght@100;200;300;400;500;600;700;800;900&family=Nunito+Sans:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="../css/main.css">
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/ui/1.13.0-rc.3/jquery-ui.min.js" integrity="sha256-R6eRO29lbCyPGfninb/kjIXeRjMOqY3VWPVk6gMhREk=" crossorigin="anonymous"></script>
+    
+    <script src="../js/smart-light.js"></script>
+    <script src="../js/smart-alarm.js"></script>
+    <script src="../js/smart-fire-detector.js"></script>
+    <script src="../js/smart-lock.js"></script>
+    <script src="../js/smart-mat.js"></script>
+    <script src="../js/smart-window.js"></script>
+
+
+    <title>Dashboard | Home Encryption</title>
+    <link rel="icon" type="image/png" href="../assets/light_favicon.png"/>
+
+</head>
+<body>
+
+    <div class="container-fluid">
+
+        <div class="row">
+    
+            <div class="mobile_header col-12 position-fixed top-0 start-0 row">
+                <div class="header_logo_box col-8 position-absolute top-50 start-50 translate-middle">
+                    <a href="../index.html">
+                        <img src="../assets/logo.svg" alt="Home Encryption Logo" class="header_logo">
+                    </a>
+                    <h1>Home Encryption</h1>
+                </div>
+            </div>
+
+            <div class="nav_bar col-12 position-fixed bottom-0 start-0">
+                <div class="security_btn position-absolute top-50 start-50 translate-middle">
+                    <img src="../assets/arm_house_icon.svg" alt="Arm House" class="security_btn_icon position-fixed top-50 start-50 translate-middle">
+                </div>
+            </div>
+
+            <div class="smart_device_container col-12">
+                <h1 class="single_device_title">Outside Lights</h1>
+                <img src="../assets/smart_light_on_icon.svg" alt="" class="single_device_icon">
+
+                <div class="toggle_switch">
+                    <label class="switch">
+                        <input type="checkbox" id="light_toggle_switch">
+                        <span class="slider round"></span>
+                    </label>
+                </div>
+
+            </div>
+
+            <div class="device_draw bottom-0">
+
+                <h3>Devices:</h3>
+                <img src="../assets/draw_chevron.svg" class="draw_chevron">
+
+                <div class="device_row">
+                    <a href="smart-lock.html">
+                        <div class="device">
+                            <img src="../assets/smart_door_lock_icon.svg" class="device_icon">
+                            <div class="device_text">
+                                <h5 class="device_title">Front Door</h5>
+                                <h6 class="device_description">Locked</h6>
+                            </div>
+                        </div>
+                    </a>
+
+                    <a href="smart-light.html">
+                        <div class="device device_gap active_device">
+                            <img src="../assets/smart_light_on_icon.svg" class="device_icon">
+                            <div class="device_text">
+                                <h5 class="device_title">Outside Lights</h5>
+                                <h6 class="device_description">On</h6>
+                            </div>
+                        </div>
+                    </a>
+
+                </div>
+
+                <div class="device_row">
+
+                    <a href="smart-alarm.html">
+                        <div class="device">
+                            <img src="../assets/smart_alarm_mute_icon.svg" class="device_icon">
+                            <div class="device_text">
+                                <h5 class="device_title">Alarm System</h5>
+                                <h6 class="device_description">Nothing Happening</h6>
+                            </div>
+                        </div>
+                    </a>
+
+                    <a href="smart-fire-detector.html">
+                        <div class="device device_gap">
+                            <img src="../assets/smart_fire_detector_icon.svg" class="device_icon">
+                            <div class="device_text">
+                                <h5 class="device_title">Fire Detector</h5>
+                                <h6 class="device_description">Nothing Happening</h6>
+                            </div>
+                        </div>
+                    </a>
+                </div>  
+
+
+                <div class="device_row">
+                    <a href="smart-window.html">
+                        <div class="device">
+                            <img src="../assets/smart_window_icon.svg" class="device_icon">
+                            <div class="device_text">
+                                <h5 class="device_title">Living Room Windows</h5>
+                                <h6 class="device_description">Closed</h6>
+                            </div>
+                        </div>
+                    </a>
+
+                    <a href="smart-mat.html">
+                        <div class="device device_gap">
+                            <img src="../assets/smart_mat_icon.svg" class="device_icon">
+                            <div class="device_text">
+                                <h5 class="device_title">Welcome Mat</h5>
+                                <h6 class="device_description">Nothing Happening</h6>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                
+
+            </div>
+
+        </div>
+
+    </div>
+
+</body>
+
+<script src="../js/index.js"></script>
+
+</html>
